@@ -14,7 +14,7 @@ body{
     background-size: 100% 225px;
 }
 
-/*
+
 .header{
     display: flex;
     flex-direction: row;
@@ -28,9 +28,9 @@ body{
     /*position: sticky;
     top: 0;
     z-index: 5;*/
-/*}*/
+}
 
-/*
+
 .header nav{
     position: relative;
     justify-content: center;
@@ -38,8 +38,8 @@ body{
     width: 40%;
     height: 100px;
     border-radius: 50px;
-}*/
-/*
+}
+
 .header nav ul{ 
     display: flex;
     flex-direction: row;
@@ -91,7 +91,7 @@ body{
     color: rgb(142, 165, 236);
 
 }
-*/
+
 
 .header h3{
     display: flex;
@@ -201,7 +201,7 @@ font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: 200px;  
 }
-
+/*
 .carousel-inner img {
     width: 50%;
     height: 300px;
@@ -224,11 +224,10 @@ font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 50px;
     
 }
+*/
 
 
-/*
 .bahia img {
-
     width: 100px;
     height: 100px;
     margin: 100px; 
@@ -241,7 +240,7 @@ font-family: Arial, Helvetica, sans-serif;
     margin: 100px; 
     border-radius: 100px;
 }
-*/
+
 
 /*COMUNICACION*/
 .comunicacion {
@@ -291,11 +290,6 @@ font-family: Arial, Helvetica, sans-serif;
     color: black;
 
 }
-
-
-
-
-
 
 /*FOOTER*/
 

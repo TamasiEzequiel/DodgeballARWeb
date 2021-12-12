@@ -1,0 +1,50 @@
+/*TORNEOS*/
+
+
+.torneos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+
+    p {
+        background-color: honeydew;
+        text-align: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        margin-left: 100px;
+        border-radius: 50px;
+        width: 250px;
+        height: 200px;
+        padding-top: 15px;
+    }
+}
+ 
+#vivo iframe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 400px;
+    height: 250px;
+    margin-left: 608px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#imgvivo img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    
+    &:hover{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+.torreg{
+    display: flex;
+    flex-direction: row;
+}
