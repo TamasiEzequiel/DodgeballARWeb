@@ -41,16 +41,15 @@
             border-radius: 25px;
         
         }
-    }
 
+    }
 }
 
 .valores{
     grid-area: valores;
 }
 
- 
-/*caja de columna*/
+
 .contenedorVal{
     display: flex;
     flex-direction: column;
@@ -72,23 +71,26 @@
         font-size: 1.25rem;
         font-style: normal;
     }
+
+}
+
+@mixin valores ($tipoLetra, $tamLetra) {
+    font-size: $tamLetra;
+    font-style: $tipoLetra;
 }
 
 
-/*tamaños fuentes*/
 #val1 {
-    font-size: 2.5rem;
-    font-style: oblique;
+    @include valores(oblique,2.5rem)
 }
 
 #val2{
-    font-size: 2.5rem;
-    font-style: oblique;
+   @extend #val1;
 }
 #val3{
-    font-size: 2.5rem;
-    font-style: oblique;
+   @extend #val1;
 }
+
 /*distribucion caja autoridades*/
 .autorCont{
     display: flex;
@@ -104,20 +106,22 @@
 
 }
 
-#presi img{
-    display: flex;
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    border-radius: 100px;
-    
+
+@mixin imgAutor ($displ,$ancho, $alto, $margen, $radio) {
+    display: $displ;
+    width: $ancho;
+    height: $alto;
+    margin: $margen;
+    border-radius: $radio;
 }
 
+    
+#presi img{
+    @include imgAutor(flex,200px,200px,20px,100px) 
+      
+}
+    
 #vice img{
-    display: flex;
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    border-radius: 100px;
+    @include imgAutor(flex,200px,200px,20px,100px)
 }
 

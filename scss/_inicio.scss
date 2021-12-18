@@ -1,12 +1,5 @@
 
-h3{
-    display: flex;
-    justify-content: center;
-    font-weight: 200;
-    font-size: 2rem; /* = 20px */
-    text-align: center; /* UBICACION DE TXT*/
-    color: black;
-}
+
 
 .novedades{
     display: flex;
@@ -20,16 +13,19 @@ h3{
         text-align: center; /* UBICACION DE TXT*/
         color: black;
     }
+
     p{
         vertical-align: bottom;
         font-weight: 300;
         font-size: 1.5rem; 
         text-align: center; 
     }
+
     div{
         text-align: center; 
         background-color: rgb(240, 234, 226);
     }
+
 }
 
 
@@ -45,9 +41,19 @@ h3{
 
     p{
         font-family: Arial, Helvetica, sans-serif;
-        }
-} 
+    }
+}
 
+#nota2{
+    @extend #nota1;
+    float: inline-start;
+}
+
+#nota3{
+    @extend #nota2;
+}
+
+/*
 #nota2{
     float: inline-start;
     border: 1px solid rgb(199, 210, 214);  
@@ -62,9 +68,9 @@ h3{
         font-family: Arial, Helvetica, sans-serif;
     }
 
-}
+}*/
 
-#nota3{
+/*#nota3{
     float: inline-start;
     border: 1px solid rgb(199, 210, 214);  
     width: 300px;
@@ -77,7 +83,7 @@ h3{
     p{
         font-family: Arial, Helvetica, sans-serif;
     }
-}
+}*/
 
 /*BANNER ASOCIADOS*/
 
@@ -89,47 +95,26 @@ h3{
     align-items: center;
     background-color: aquamarine;
     width: 100%;
-    height: 200px;  
-}
-/*
-.carousel-inner img {
-    width: 50%;
-    height: 300px;
-    border-radius: 500px;
-    justify-content: center;
-    margin-left: 30%;
+    height: 200px;
 }
 
-.carousel-inner{
- justify-content: center;
- width: 50%;
- height: 300px;
- align-content: center;
-}
+//APLICO MIXIN PARA PARAMETRIZAR LOS ESCUDOS DE ASOCIADOS, EN CASO DE AGREGAR MAS YA ESTA PREDETERMINADO
 
-#carouselExampleControls{
-    width: 50%;
-    margin-left: 36.5%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
+@mixin imgLog  ($ancho, $alto, $margen, $radio){
+    width: $ancho;
+    height: $alto;
+    margin: $margen; 
+    border-radius: $radio;
 }
-*/
-
 
 .bahia img {
-    width: 100px;
-    height: 100px;
-    margin: 100px; 
-    border-radius: 100px;
+    @include imgLog(100px,100px,100px,100px)
 }
 
 .larioja img {
-    width: 100px;
-    height: 100px;
-    margin: 100px; 
-    border-radius: 100px;
+    @include imgLog(100px,100px,100px,100px)
 }
+
 
 
 /*COMUNICACION*/
@@ -148,6 +133,7 @@ h3{
         text-align: center; /* UBICACION DE TXT*/
         color: black;
     }
+
     h4{
         font-weight: 200;
         font-size: 1rem; /* = 20px */
@@ -162,13 +148,15 @@ h3{
         text-align: center; /* UBICACION DE TXT*/
         color: black;
     
-    }    
+    }
+
 }
- 
+
 .mapa iframe{
     width: 200px;
     height: 200px;
 }
+
 .form{
     background-color: beige;
     padding: 15px;

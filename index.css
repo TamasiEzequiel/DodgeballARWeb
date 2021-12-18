@@ -15,20 +15,6 @@ body{
 }
 
 
-.header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center;
-    height: 150px;
-    width: 100%;
-    border-radius: 50px;
-    margin-top: 75px;
-    /*seguimiento de menu*/
-    /*position: sticky;
-    top: 0;
-    z-index: 5;*/
-}
 
 
 .header nav{
