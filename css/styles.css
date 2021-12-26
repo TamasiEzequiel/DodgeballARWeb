@@ -4,82 +4,20 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #cbe4e4;
+  background-color: white;
   font-family: 'Poppins', sans-serif;
-  background-image: url(./IMGS/fondoDos.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 225px; }
-
-.header nav {
-  position: relative;
-  justify-content: center;
-  background-color: beige;
-  width: 100%;
-  height: 100px; }
-  .header nav ul {
+  body h3 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0px;
-    font-weight: 500;
-    font-size: 1rem;
-    color: #f8f4f4; }
-    .header nav ul li {
-      display: flex;
-      list-style-type: none;
-      padding: 5px;
-      align-content: center; }
-      .header nav ul li a {
-        display: flex;
-        justify-content: space-around;
-        color: black;
-        text-decoration: none;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 1.5rem; }
-    .header nav ul h1 {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-      margin-top: 0px;
-      font-size: 2rem;
-      font-weight: 1000;
-      width: 100%;
-      text-align: center;
-      color: #8ea5ec; }
-    .header nav ul h3 {
-      display: flex;
-      flex-flow: wrap row;
-      justify-content: center;
-      font-size: 1rem;
-      font-weight: 1000;
-      width: 100%;
-      text-align: center;
-      color: #8ea5ec; }
-
-.header h3 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 1000;
-  width: 100%;
-  text-align: center;
-  color: white; }
-
-/*PARA SUBTITULOS*/
-h3 {
-  display: flex;
-  justify-content: center;
-  font-weight: 200;
-  font-size: 2rem;
-  /* = 20px */
-  text-align: center;
-  /* UBICACION DE TXT*/
-  color: black; }
+    justify-content: center;
+    font-weight: 200;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: black; }
 
 /*FOOTER*/
 .footer {
@@ -88,24 +26,23 @@ h3 {
   flex-wrap: wrap; }
 
 .redes p {
+  display: flex;
   margin-bottom: 0px;
   padding: 0px;
   background-color: beige;
-  display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   border-start-end-radius: 200px; }
 
 .copy {
+  display: flex;
   margin: 0px;
   padding: 0px;
-  display: flex;
   flex-flow: wrap row;
   justify-content: center;
   font-size: 1.25rem;
   font-weight: 100;
   text-align: center;
-  /* UBICACION DE TXT*/
   color: black;
   background-color: beige; }
 
@@ -418,15 +355,6 @@ h2 {
     width: 250px;
     height: 200px;
     padding-top: 15px; }
-  .torneos #vivo iframe {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 400px;
-    height: 250px;
-    margin-left: 608px;
-    margin-top: 100px;
-    margin-bottom: 100px; }
   .torneos #imgvivo img {
     display: flex;
     flex-flow: row wrap;
@@ -437,9 +365,16 @@ h2 {
     .torneos #imgvivo img:hover {
       height: 350px;
       width: 350px; }
-  .torneos .torreg {
+
+#torreg {
+  display: flex;
+  justify-content: center;
+  height: 600px; }
+  #torreg #vivo iframe {
     display: flex;
-    flex-direction: row; }
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px; }
 
 /*INTERNACIONAL*/
 .inter {
@@ -511,7 +446,9 @@ h2 {
   .gridContainer {
     grid-template-rows: none; }
   #vivo iframe {
-    margin-left: 200px; }
+    margin-left: 0px;
+    height: 200px;
+    width: 200px; }
   .inter {
     height: 1300px; }
   .nac {
