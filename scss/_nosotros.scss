@@ -1,97 +1,124 @@
 /*SOBRE NOSOTOROS*/
 
-/*ordenamiento grid*/
-.gridContainer{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "somos somos valores"
-    "autoridades autoridades valores"; /*poner las filas*/
-    row-gap: 10px;
-
-}
-/*identidad de los grid*/
-.autoridades{
-    grid-area: autoridades;
-}    
-
 .somos{
-    grid-area: somos;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 1.80rem;
+    border: 1px solid rgb(199, 210, 214);  
+    width: 90%;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 20px;    
+    background: rgba(141, 182, 221, 0.644);
+/*    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);*/
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247,255,217,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247,255,217,0);
 
-    p{
-        background-color: bisque;
+
+    img{
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        border: blanchedalmond;
-        border-radius: 50px;
-        height: 500px;
-        text-align:justify;
-        padding: 10px;
-        font-size: 1.25rem;
-        margin: 50px;
-
-        img{
-            display: flex;
-            width: 200px;
-            height: 200px;
-            margin: 20px;
-            border-radius: 25px;
-        
-        }
-
+        align-content: center;
+        width: 100%;
+        height: 65%;
+        border-radius: 10px;
+        margin-bottom: 10px;
     }
 }
+
 
 .valores{
-    grid-area: valores;
-}
 
-
-.contenedorVal{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1rem;
-    justify-content: space-evenly;
-    background-color: rgb(168, 224, 112);
-    border-radius: 30px;
-    height: 1200px;
+    flex-flow: row wrap;
     margin-top: 50px;
-    padding: 10px;
+    width: 100%;
+    justify-content: space-evenly;
 
-    h3{
-        font-size: 3rem;
-        font-weight: bolder;
+   
+
+    #val1{
+
+        display: inline-flexbox;
+        border: 1px solid rgb(199, 210, 214);  
+        width: 250px;
+        height: 100%;
+        margin: 50px;
+        padding: 10px;
+        border-radius: 20px;    
+        background: rgba(240, 240, 240, 0.493);
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247,255,217,0); 
+        box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247,255,217,0);
+    
+        p{
+            padding-top: 10px;
+            color: rgb(250, 6, 6);
+            text-align: center;
+            font-size: 1.75rem;
+            font-weight: 1000;
+            
+        }
+                   
     }
 
-    h4{
-        font-size: 1.25rem;
-        font-style: normal;
+    #txt1{
+
+        p{
+            padding-top: 10px;
+            color: rgb(0, 0, 0);
+            text-align: justify;
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }   
+
+    }
+
+    #val2{
+        @extend #val1;
+       
+        p{
+            color: rgb(55, 250, 6);
+        }
+        
+    }   
+
+    #txt2{
+
+        p{
+            padding-top: 10px;
+            color: rgb(0, 0, 0);
+            text-align:left;
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }   
+
+    }
+    
+    #val3{
+        @extend #val1;
+       
+        p{
+            color: rgb(6, 10, 250);
+        }
+        
+    }   
+    
+    #txt3{
+
+        p{
+            padding-top: 10px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }   
+
     }
 
 }
 
-@mixin valores ($tipoLetra, $tamLetra) {
-    font-size: $tamLetra;
-    font-style: $tipoLetra;
-}
-
-
-#val1 {
-    @include valores(oblique,2.5rem)
-}
-
-#val2{
-   @extend #val1;
-}
-#val3{
-   @extend #val1;
-}
-
-/*distribucion caja autoridades*/
 .autorCont{
     display: flex;
     flex-flow: row wrap;
@@ -124,4 +151,3 @@
 #vice img{
     @include imgAutor(flex,200px,200px,20px,100px)
 }
-

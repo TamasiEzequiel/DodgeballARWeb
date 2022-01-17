@@ -50,19 +50,19 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 100px;
+  margin-top: 100px; }
   .novedades h4 {
     font-weight: 1000;
-    font-size: 1rem;
-    /* = 20px */
+    font-size: 1.5rem;
     text-align: center;
-    /* UBICACION DE TXT*/
     color: black; }
   .novedades p {
     vertical-align: bottom;
     font-weight: 300;
     font-size: 1.5rem;
-    text-align: center; }
+    text-align: justify; }
   .novedades div {
     text-align: center;
     background-color: #f0eae2; }
@@ -73,45 +73,19 @@ body {
   width: 300px;
   height: 400px;
   margin: 50px;
+  padding: 10px;
   border-radius: 20px;
-  background: #f6dde8;
-  background: linear-gradient(90deg, #f6dde8 97%, #e0bebe 100%); }
+  background: rgba(141, 182, 221, 0.644);
+  /*    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);*/
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0); }
   #nota1 p, #nota2 p, #nota3 p {
+    padding-top: 10px;
     font-family: Arial, Helvetica, sans-serif; }
 
 #nota2, #nota3 {
   float: inline-start; }
 
-/*
-#nota2{
-    float: inline-start;
-    border: 1px solid rgb(199, 210, 214);  
-    width: 300px;
-    height: 400px;
-    margin: 50px;
-    border-radius: 20px;    
-    background: rgb(246,221,232);
-    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);
-
-    p{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-}*/
-/*#nota3{
-    float: inline-start;
-    border: 1px solid rgb(199, 210, 214);  
-    width: 300px;
-    height: 400px;
-    margin: 50px;
-    border-radius: 20px;
-    background: rgb(246,221,232);
-    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);
-
-    p{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-}*/
 /*BANNER ASOCIADOS*/
 .asociados {
   display: flex;
@@ -120,7 +94,9 @@ body {
   align-items: center;
   background-color: aquamarine;
   width: 100%;
-  height: 200px; }
+  height: 200px;
+  margin-bottom: 100px;
+  margin-top: 100px; }
 
 .bahia img {
   width: 100px;
@@ -139,30 +115,25 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 100px;
+  margin-top: 100px; }
   .comunicacion h3 {
     font-weight: 1000;
     font-size: 2rem;
-    /* = 20px */
     text-align: center;
-    /* UBICACION DE TXT*/
     color: black; }
   .comunicacion h4 {
     font-weight: 200;
-    font-size: 1rem;
-    /* = 20px */
+    font-size: 1.5rem;
     text-align: center;
-    /* UBICACION DE TXT*/
     color: black; }
   .comunicacion p {
-    float: flex;
+    display: flex;
     font-weight: 75px;
     font-size: 2rem;
-    /* = 20px */
     text-align: center;
-    /* UBICACION DE TXT*/
     color: black; }
 
 .mapa iframe {
@@ -173,78 +144,87 @@ body {
   background-color: beige;
   padding: 15px;
   width: 200px;
-  height: 200px; }
+  height: 200px;
+  justify-content: center; }
   .form legend {
     float: inline-start;
     font-weight: 75px;
+    margin-bottom: 10px;
     font-size: 1.5rem;
-    /* = 20px */
     text-align: center;
-    /* UBICACION DE TXT*/
     color: black; }
 
 /*SOBRE NOSOTOROS*/
-/*ordenamiento grid*/
-.gridContainer {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "somos somos valores" "autoridades autoridades valores";
-  /*poner las filas*/
-  row-gap: 10px; }
-
-/*identidad de los grid*/
-.autoridades {
-  grid-area: autoridades; }
-
 .somos {
-  grid-area: somos; }
-  .somos p {
-    background-color: bisque;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.80rem;
+  border: 1px solid #c7d2d6;
+  width: 90%;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgba(141, 182, 221, 0.644);
+  /*    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);*/
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0); }
+  .somos img {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    border: blanchedalmond;
-    border-radius: 50px;
-    height: 500px;
-    text-align: justify;
-    padding: 10px;
-    font-size: 1.25rem;
-    margin: 50px; }
-    .somos p img {
-      display: flex;
-      width: 200px;
-      height: 200px;
-      margin: 20px;
-      border-radius: 25px; }
+    align-content: center;
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+    margin-bottom: 10px; }
 
 .valores {
-  grid-area: valores; }
-
-.contenedorVal {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 1rem;
-  justify-content: space-evenly;
-  background-color: #a8e070;
-  border-radius: 30px;
-  height: 1200px;
+  flex-flow: row wrap;
   margin-top: 50px;
-  padding: 10px; }
-  .contenedorVal h3 {
-    font-size: 3rem;
-    font-weight: bolder; }
-  .contenedorVal h4 {
-    font-size: 1.25rem;
-    font-style: normal; }
+  width: 100%;
+  justify-content: space-evenly; }
+  .valores #val1, .valores #val2, .valores #val3 {
+    display: inline-flexbox;
+    border: 1px solid #c7d2d6;
+    width: 250px;
+    height: 100%;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    background: rgba(240, 240, 240, 0.493);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0); }
+    .valores #val1 p, .valores #val2 p, .valores #val3 p {
+      padding-top: 10px;
+      color: #fa0606;
+      text-align: center;
+      font-size: 1.75rem;
+      font-weight: 1000; }
+  .valores #txt1 p {
+    padding-top: 10px;
+    color: black;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .valores #val2 p {
+    color: #37fa06; }
+  .valores #txt2 p {
+    padding-top: 10px;
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .valores #val3 p {
+    color: #060afa; }
+  .valores #txt3 p {
+    padding-top: 10px;
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-#val1, #val2, #val3 {
-  font-size: 2.5rem;
-  font-style: oblique; }
-
-/*distribucion caja autoridades*/
 .autorCont {
   display: flex;
   flex-flow: row wrap;
@@ -390,42 +370,48 @@ h2 {
     display: flex;
     flex-flow: row wrap;
     width: 300px;
-    height: 600px;
+    height: 500px;
     text-align: justify;
     font-size: 1.5rem;
     padding-left: 10px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0); }
     .inter p img {
       justify-content: center;
       margin-top: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
       height: 200px;
       width: 250px; }
       .inter p img:hover {
-        height: 300px;
-        width: 350px; }
+        -webkit-box-shadow: 0px 0px 15px 5px #000000;
+        box-shadow: 0px 0px 15px 5px #000000; }
 
 .nac {
   display: flex;
   flex-flow: wrap row;
   background-color: rgba(53, 201, 8, 0.281);
   width: 90%;
-  height: 300px;
+  height: 450px;
   border-radius: 20px;
   border-bottom: lightgreen;
   padding: 25px;
   margin: 40px;
+  margin-bottom: 100px;
   justify-content: center; }
   .nac img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 125px;
-    width: 125px;
+    height: 200px;
+    width: 200px;
     border-radius: 50px;
     margin-left: 50px;
     margin-right: 50px; }
   .nac p {
     display: flex;
+    margin: 20px;
     flex-flow: wrap row;
     text-align: center;
     font-size: 2rem; }
@@ -455,73 +441,166 @@ h2 {
     width: 80%;
     height: 600px; } }
 
-@media screen and (max-width: 767px) {
-  .header {
-    justify-items: center;
-    height: 150px;
-    width: 80%; }
-    .header nav {
-      width: 90%;
-      height: 100px; }
-      .header nav ul li {
-        display: flex;
-        flex-flow: wrap row;
-        list-style-type: none;
-        padding: 5px;
-        align-content: center; }
-        .header nav ul li a {
-          display: flex;
-          justify-content: center;
-          font-size: 1.25rem; }
-      .header nav ul h3 {
-        display: none; }
-  .somos p {
-    height: 100%; }
-    .somos p img {
+@media screen and (max-width: 616px) {
+  .bahia img {
+    width: 75px;
+    height: 75px;
+    margin: 75px;
+    border-radius: 75px; }
+  .larioja img {
+    width: 75px;
+    height: 75px;
+    margin: 75px;
+    border-radius: 75px; }
+  .bahia {
+    width: 100px; }
+  .comunicacion {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 100px; }
+    .comunicacion p {
       display: flex;
-      width: 100px;
-      height: 100px;
-      margin: 20px;
-      border-radius: 25px; }
-  #presi img {
+      margin: 25px;
+      font-weight: 50px;
+      font-size: 1.5rem; }
+  .mapa iframe {
+    width: 300px;
+    height: 150px; }
+  .form {
+    padding: 15px;
+    margin-top: 25px;
+    width: 250px;
+    height: 150px; }
+    .form legend {
+      display: flex;
+      font-weight: 15px;
+      margin-bottom: 5px;
+      font-size: 1rem;
+      justify-content: center; }
+  /*NOSOTROS*/
+  .somos {
+    width: 80%;
+    height: 1500px;
+    margin: none;
+    padding: 10px;
+    border-radius: 20px; }
+    .somos img {
+      display: flex;
+      align-content: center;
+      width: 100%;
+      height: 25%;
+      border-radius: 10px;
+      margin-bottom: 10px; }
+  .valores {
     display: flex;
-    width: 100px;
-    height: 100px; }
-  #vice img {
-    display: flex;
-    width: 100px;
-    height: 100px; }
+    flex-flow: row wrap;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-evenly; }
+    .valores #val1, .valores #val2, .valores #val3 {
+      display: inline-flexbox;
+      border: 1px solid #c7d2d6;
+      width: 250px;
+      height: 100%;
+      margin: 50px;
+      padding: 10px;
+      border-radius: 20px;
+      background: rgba(240, 240, 240, 0.493);
+      -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0);
+      box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0); }
+      .valores #val1 p, .valores #val2 p, .valores #val3 p {
+        padding-top: 10px;
+        color: #fa0606;
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: 1000; }
+    .valores #txt1 p {
+      padding-top: 10px;
+      color: black;
+      text-align: justify;
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    .valores #val2 p {
+      padding-top: 10px;
+      color: #37fa06;
+      text-align: center;
+      font-size: 1.75rem;
+      font-weight: 1000; }
+    .valores #txt2 p {
+      padding-top: 10px;
+      color: black;
+      text-align: justify;
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    .valores #val3 p {
+      padding-top: 10px;
+      color: #060afa;
+      text-align: center;
+      font-size: 1.75rem;
+      font-weight: 1000; }
+    .valores #txt3 p {
+      padding-top: 10px;
+      color: black;
+      text-align: justify;
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
   .autorCont {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 200px;
+    width: 80%;
+    height: 450px;
     border-radius: 25px;
-    margin: 20px;
+    justify-content: center;
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 200px;
-    margin-bottom: 200px; }
-  .gridContainer {
-    grid-template-rows: none; }
+    margin-top: 100px; }
+  #presi img {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin: 0px;
+    border-radius: 100px; }
+  #vice img {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin: 0px;
+    border-radius: 100px; }
+  #vice {
+    text-align: center; }
+  #presi {
+    text-align: center; } }
+
+/*reglamentos*/
+.foam {
+  width: 93%; }
   .foam p {
-    width: auto;
-    height: auto; }
+    height: 500px; }
+
+.cloth {
+  width: 93%; }
   .cloth p {
-    width: auto;
-    height: auto; }
-  /*internacional*/
-  .inter {
-    height: auto; }
-  .nac {
-    width: auto;
-    height: auto; }
-    .nac img {
-      height: 100px;
-      width: 100px; }
-    .nac p {
-      display: flex;
-      flex-flow: wrap row;
-      text-align: center;
-      font-size: 2rem; } }
+    height: 600px; }
+
+/*internacional*/
+.inter {
+  height: auto; }
+
+.nac {
+  width: auto;
+  height: auto; }
+  .nac img {
+    height: 100px;
+    width: 100px; }
+  .nac p {
+    display: flex;
+    flex-flow: wrap row;
+    text-align: center;
+    font-size: 2rem; }
+
+/*TORNEOS*/
+.torneos p {
+  margin-left: 50px;
+  margin-bottom: 50px; }

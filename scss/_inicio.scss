@@ -6,11 +6,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
 
     h4 {
         font-weight: 1000;
-        font-size: 1rem; /* = 20px */
-        text-align: center; /* UBICACION DE TXT*/
+        font-size: 1.5rem;
+        text-align: center; 
         color: black;
     }
 
@@ -18,7 +20,7 @@
         vertical-align: bottom;
         font-weight: 300;
         font-size: 1.5rem; 
-        text-align: center; 
+        text-align: justify; 
     }
 
     div{
@@ -35,11 +37,15 @@
     width: 300px;
     height: 400px;
     margin: 50px;
+    padding: 10px;
     border-radius: 20px;    
-    background: rgb(246,221,232);
-    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);
+    background: rgba(141, 182, 221, 0.644);
+/*    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);*/
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247,255,217,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247,255,217,0);
 
     p{
+        padding-top: 10px;
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -53,37 +59,6 @@
     @extend #nota2;
 }
 
-/*
-#nota2{
-    float: inline-start;
-    border: 1px solid rgb(199, 210, 214);  
-    width: 300px;
-    height: 400px;
-    margin: 50px;
-    border-radius: 20px;    
-    background: rgb(246,221,232);
-    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);
-
-    p{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-}*/
-
-/*#nota3{
-    float: inline-start;
-    border: 1px solid rgb(199, 210, 214);  
-    width: 300px;
-    height: 400px;
-    margin: 50px;
-    border-radius: 20px;
-    background: rgb(246,221,232);
-    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);
-
-    p{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-}*/
 
 /*BANNER ASOCIADOS*/
 
@@ -96,6 +71,8 @@
     background-color: aquamarine;
     width: 100%;
     height: 200px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 //APLICO MIXIN PARA PARAMETRIZAR LOS ESCUDOS DE ASOCIADOS, EN CASO DE AGREGAR MAS YA ESTA PREDETERMINADO
@@ -123,29 +100,30 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-evenly;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 
     h3{
         font-weight: 1000;
-        font-size: 2rem; /* = 20px */
-        text-align: center; /* UBICACION DE TXT*/
+        font-size: 2rem; 
+        text-align: center; 
         color: black;
     }
 
     h4{
         font-weight: 200;
-        font-size: 1rem; /* = 20px */
-        text-align: center; /* UBICACION DE TXT*/
+        font-size: 1.5rem; 
+        text-align: center;
         color: black;
     }
 
     p{
-        float: flex;
+        display: flex;
         font-weight: 75px;
-        font-size: 2rem; /* = 20px */
-        text-align: center; /* UBICACION DE TXT*/
+        font-size: 2rem; 
+        text-align: center; 
         color: black;
     
     }
@@ -162,12 +140,16 @@
     padding: 15px;
     width: 200px;
     height: 200px;
+    justify-content: center;
+
+    
 
     legend{
         float: inline-start;
         font-weight: 75px;
-        font-size: 1.5rem; /* = 20px */
-        text-align: center; /* UBICACION DE TXT*/
+        margin-bottom: 10px;
+        font-size: 1.5rem; 
+        text-align: center; 
         color: black;
     }
 }
