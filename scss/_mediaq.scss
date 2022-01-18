@@ -21,9 +21,6 @@
     .autorCont{
         height: 300px;
     }
-    .gridContainer{
-        grid-template-rows: none;
-    }
 
     #vivo iframe {
         margin-left: 0px;;
@@ -40,6 +37,34 @@
     }
 
 }
+
+
+@media screen and (max-width: 890px ){
+
+    .somos{
+        height: 1280px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 616px){
@@ -267,7 +292,7 @@
     
 .foam{
 
-    width: 93%;
+    width: 100%;
     
     p{
         height: 500px;
@@ -275,10 +300,8 @@
 
 }
 
-
-
 .cloth{
-    width: 93%;
+    width: 100%;
     
     p{
         height: 600px;

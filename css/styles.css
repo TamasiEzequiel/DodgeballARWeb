@@ -161,6 +161,7 @@ body {
   font-size: 1.80rem;
   border: 1px solid #c7d2d6;
   width: 90%;
+  height: 100%;
   margin: 50px;
   padding: 10px;
   border-radius: 20px;
@@ -282,7 +283,7 @@ h2 {
     justify-content: center;
     background-color: darkgrey;
     border-radius: 50px;
-    /*width: 300px;*/
+    width: 300px;
     height: 125px;
     margin: 75px;
     padding: 15px;
@@ -293,9 +294,7 @@ h2 {
   display: inline-flex;
   flex-flow: wrap row;
   justify-content: space-around;
-  /*width: 500px;
-    height: 350px;
-    margin: 75px;*/ }
+  /*margin: 75px;*/ }
   .cloth article img {
     width: 200px;
     height: 200px;
@@ -313,7 +312,7 @@ h2 {
     justify-content: center;
     background-color: darkgrey;
     border-radius: 50px;
-    /*width: 300px;*/
+    width: 300px;
     height: 150px;
     margin: 75px;
     padding: 15px;
@@ -429,8 +428,6 @@ h2 {
     height: 1050px; }
   .autorCont {
     height: 300px; }
-  .gridContainer {
-    grid-template-rows: none; }
   #vivo iframe {
     margin-left: 0px;
     height: 200px;
@@ -440,6 +437,10 @@ h2 {
   .nac {
     width: 80%;
     height: 600px; } }
+
+@media screen and (max-width: 890px) {
+  .somos {
+    height: 1280px; } }
 
 @media screen and (max-width: 616px) {
   .bahia img {
@@ -575,12 +576,12 @@ h2 {
 
 /*reglamentos*/
 .foam {
-  width: 93%; }
+  width: 100%; }
   .foam p {
     height: 500px; }
 
 .cloth {
-  width: 93%; }
+  width: 100%; }
   .cloth p {
     height: 600px; }
 

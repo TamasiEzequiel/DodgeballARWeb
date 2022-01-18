@@ -11,7 +11,7 @@ h2{
     display: inline-flex;
     flex-flow: wrap row;
     justify-content: space-around;
-    
+
     article {
         img{
             width: 200px;
@@ -37,7 +37,7 @@ h2{
         justify-content: center;
         background-color: darkgrey;
         border-radius: 50px;
-        /*width: 300px;*/
+        width: 300px;
         height: 125px;
         margin: 75px;
         padding: 15px;
@@ -50,12 +50,10 @@ h2{
 
 
 .cloth{
-    display: inline-flex;
+    display: inline-flex;   
     flex-flow: wrap row;
     justify-content: space-around;
-    /*width: 500px;
-    height: 350px;
-    margin: 75px;*/
+    /*margin: 75px;*/
    
     article{
         
@@ -86,7 +84,7 @@ h2{
         justify-content: center;
         background-color: darkgrey;
         border-radius: 50px;
-        /*width: 300px;*/
+        width: 300px;
         height: 150px;
         margin: 75px;
         padding: 15px;
