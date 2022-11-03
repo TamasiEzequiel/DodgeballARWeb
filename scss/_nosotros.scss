@@ -1,6 +1,6 @@
 /*SOBRE NOSOTOROS*/
 
-.somos{
+#somos{
     display: flex;
     flex-flow: row wrap;
     font-size: 1.80rem;
@@ -26,7 +26,7 @@
 }
 
 
-.valores{
+#valores{
 
     display: flex;
     flex-flow: row wrap;
@@ -119,10 +119,12 @@
 
 }
 
+
+
+
 .autorCont{
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
     height: 500px;
     border-radius: 25px;
     justify-content: space-around;
@@ -130,6 +132,7 @@
     text-align: center;
     font-size: 1.5rem;
     margin-top: 100px;
+
 
 }
 
@@ -150,4 +153,52 @@
     
 #vice img{
     @include imgAutor(flex,200px,200px,20px,100px)
+}
+
+
+.mapa{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 100px;
+    h4{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-flow: row wrap;
+    }
+
+   #submap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px;
+
+    
+   }
+
+   #txtCard{
+    display: flex;
+    border-radius: 50px;
+    width: 500px;
+    background-color: darkgray;
+    height: 300px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        display: flex;
+        height: 200px;
+        width: 600px;
+        font-size: 1.85rem;
+        margin: 25px;
+        text-justify:distribute;
+    }
+    
+   }
+
+    
 }

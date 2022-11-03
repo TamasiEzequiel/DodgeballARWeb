@@ -7,7 +7,7 @@ h2{
     color: black;
 }
 
-.foam{
+#foam{
     display: inline-flex;
     flex-flow: wrap row;
     justify-content: space-around;
@@ -16,13 +16,8 @@ h2{
         img{
             width: 200px;
             height: 200px;
-            margin: 100px; 
             border-radius: 100px;
 
-            &:hover{
-                height: 250px;
-                width: 250px;
-            }
         }
         a{
             display: flex;
@@ -37,43 +32,32 @@ h2{
         justify-content: center;
         background-color: darkgrey;
         border-radius: 50px;
-        width: 300px;
-        height: 125px;
-        margin: 75px;
         padding: 15px;
+        margin: 10px;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }        
 
 }
 
 
 
-.cloth{
+#cloth{
     display: inline-flex;   
     flex-flow: wrap row;
     justify-content: space-around;
-    /*margin: 75px;*/
+    margin-bottom: 200px;
    
-    article{
-        
+    article {
         img{
             width: 200px;
             height: 200px;
-            margin: 100px; 
             border-radius: 100px;
 
-            &:hover{
-            height: 250px;
-            width: 250px;
-            }
-
         }
-
         a{
             display: flex;
             margin-left: 50px;
-
         }
 
     }
@@ -84,12 +68,11 @@ h2{
         justify-content: center;
         background-color: darkgrey;
         border-radius: 50px;
-        width: 300px;
-        height: 150px;
-        margin: 75px;
         padding: 15px;
+        margin: 10px;
         text-align: center;
-        font-size: 1.5rem;
-    }
+        font-size: 1.75rem;
+    }        
+
 
 }

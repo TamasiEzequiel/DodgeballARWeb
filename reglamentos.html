@@ -17,12 +17,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200;1,400&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Bebas+Neue&family=Lobster&display=swap"
+        rel="stylesheet">
 
-   <!--BOOSTRAP (por ahora no lo aplico hasta encontrar el diseño correcto)-->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-   integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!--CSS-->
-<link rel="stylesheet" href="css/styles.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
@@ -30,112 +32,67 @@
 
     <header>
 
-        <nav class="navbar navbar-dark" style="background-color: #1a1d1d7a;">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./IMGS/IMG LOGO.png" width="75" height="75" class="d-inline-block align-center" alt="">
-                Dodgeball Argentina
-            </a>
-    
-            <ul class="nav nav-pills nav-fill">
-               
-                <div class="mx-auto" style="width: 100px; margin: 15px;">
-                
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./sobre-nosotros.html">Sobre Nosotros</a>
+        <div class="navBar">
+            <a class="logo" href="./index.html"> <img src="./IMGS/IMG LOGOV2.png" alt="logo"></a>
+
+            <nav>
+                <ul>
+                    <li class="li-desp"> <a href="./sobre-nosotros.html">Sobre Nosotros</a>
+                        <ul class="nav-desp">
+                            <li><a href="./provincias.html">Provincias Asociadas</a></li>
+                            <li><a href="./equipos.html">Equipos</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="./reglamentos.html">Reglamentos</a></li>
+
+                    <li class="li-desp"> <a href="./torneos.html">Torneos</a>
+                        <ul class="nav-desp">
+                            <li><a href="./estadisticas.html">Estadisticas</a></li>
+                        </ul>
                     </li>
                     
-                </div>
-                
-                <div class="mx-auto" style="width: 100px; margin: 15px;">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./reglamentos.html">Reglamentos</a>
-                </li>
-                </div>
-                
-                <div class="mx-auto" style="width: 100px; margin: 15px;">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./torneos.html">Torneos</a>
-                </li>
-                </div>
-    
-                <div class="mx-auto" style="width: 100px; margin: 15px;">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./internacional.html">Internacional</a>
-                </li>
-                </div>
-    
-            </ul>
-    
-        </nav>
+                    <li> <a href="./internacional.html">Internacional</a> </li>
+                </ul>
+
+            </nav>
+        </div>
 
     </header>
 
-     
+
     <h2>Reglamentos</h2>
 
     <h3>Foam</h3>
-
-    <div class="foam">
-
-        <article>
-            <img src="./IMGS/pelotaFoam.jpg" alt="img foam">
-
-        </article>
-
-        <p>Categoria FOAM
-            <br>
-            <br>
-            El juego cobra dinamismo y versatilidad con las pelotas de espuma, con una cantidad de 6 pelotas en juego y
-            6 jugadores por equipo, el primero en eliminar al resto gana un punto. Finalizado dos tiempos de 20' cada
-            uno el equipo que mas puntos tiene es el ganador
-
-           <a download="reglamentoFoam" href="./docs/reglamento-foam.pdf">Haz click para descargar el documento.</a>
-                      
-        
-        </p>
-
-        
+    
+    <div id="foam">
     </div>
 
     <h3>Cloth</h3>
 
-    <div class="cloth">
+    
+    <div id="cloth">
 
-        <article>
-            <img src="./IMGS/pelotaClothRegla.jpg" alt="img cloth">
-        </article>
-
-
-        <p>Categoria CLOTH
-            <br>
-            <br>
-            Con la introduccion de pelotas de tela, la categoria Cloth presenta un juego mucho mas rigido y veloz, con 5
-            pelotas en cancha y tiempos de juego de 3' dentro de dos tiempos de 15' los equipos deben quemarse.
-            Finalizado el game por tiempo o por eliminacion de jugadores se otorgan 2 puntos al equipo victorioso. Gana
-            quien consiga mas puntos finalizados los dos tiempos de 15'
-
-
-            <a download="reglamentoCloth" href="./docs/reglamento-cloth.pdf">Haz click para descargar el documento.</a>
-        </p>
-
+       
     </div>
 
     <!--BANNER DE REDES Y COPY PARA TODAS LAS PAG-->
     <footer>
         <div class="redes">
-            <p> <a id="yt" href="https://www.youtube.com/results?search_query=dodgeball+argentina"> <img src="./IMGS/vYt.gif" alt="">
+            <p><a id="yt" href="https://www.youtube.com/results?search_query=dodgeball+argentina">
+                    <img src="IMGS/YTB.svg" alt="">
                 </a>
 
                 <a id="fb" href="https://web.facebook.com/dodgeball.ar/?_rdc=1&_rdr">
-                    <img src="./IMGS/vFb.gif" alt="facebook">
+                    <img src="./IMGS/FB.svg" alt="facebook">
                 </a>
 
                 <a id="ig" href="https://www.instagram.com/dodgeball.ar/">
-                    <img src="./IMGS/vIg.gif" alt="">
+                    <img src="./IMGS/IG.svg" alt="">
                 </a>
 
                 <a id="tw" href="https://twitter.com/dodgeballar">
-                    <img src="./IMGS/vTw.gif" alt=""> </a>
+                    <img src="./IMGS/TW.svg" alt=""> </a>
 
             </p>
         </div>
@@ -151,11 +108,8 @@
     </footer>
 
 
-    <!--SCRIPT BOOTSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
-    
+
+    <script src="./components/reglamentos.js"></script>
 </body>
 
 </html>

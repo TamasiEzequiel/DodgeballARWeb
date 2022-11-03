@@ -13,11 +13,66 @@ body {
     display: flex;
     justify-content: center;
     font-weight: 200;
-    font-size: 2rem;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    font-size: 3rem;
+    margin-top: 200px;
+    margin-bottom: 100px;
     text-align: center;
     color: black; }
+
+.navBar {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-color: #707079;
+  justify-content: space-evenly;
+  -webkit-box-shadow: 0px 2px 5px 0px #000000;
+  box-shadow: 0px 2px 5px 0px #000000; }
+  .navBar .logo {
+    display: flex;
+    align-items: center; }
+    .navBar .logo img {
+      display: flex;
+      height: 100px; }
+  .navBar nav {
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+    .navBar nav ul {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 100px; }
+      .navBar nav ul li {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px; }
+        .navBar nav ul li a {
+          font-family: 'Assistant', sans-serif;
+          font-size: 1.75rem;
+          color: white;
+          padding: 15px;
+          font-weight: 700;
+          text-decoration: none; }
+    .navBar nav .nav-desp {
+      display: none; }
+    .navBar nav .li-desp:hover {
+      background-color: rgba(78, 72, 72, 0.542);
+      border-radius: 50px;
+      justify-content: center;
+      height: auto;
+      width: auto; }
+      .navBar nav .li-desp:hover .nav-desp {
+        display: flex;
+        margin-top: 35px;
+        position: absolute; }
+        .navBar nav .li-desp:hover .nav-desp li:hover {
+          display: flex;
+          margin-top: 20px;
+          background-color: rgba(78, 72, 72, 0.542);
+          border-radius: 50px;
+          height: auto;
+          width: auto; }
 
 /*FOOTER*/
 .footer {
@@ -27,12 +82,25 @@ body {
 
 .redes p {
   display: flex;
+  height: 100px;
   margin-bottom: 0px;
   padding: 0px;
-  background-color: beige;
+  background-color: #707079;
   flex-flow: row wrap;
   justify-content: space-evenly;
   border-start-end-radius: 200px; }
+
+#tw {
+  display: flex; }
+
+#ig {
+  display: flex; }
+
+#yt {
+  display: flex; }
+
+#fb {
+  display: flex; }
 
 .copy {
   display: flex;
@@ -43,51 +111,41 @@ body {
   font-size: 1.25rem;
   font-weight: 100;
   text-align: center;
-  color: black;
-  background-color: beige; }
+  color: #fafcfc;
+  background-color: #707079; }
 
-.novedades {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 100px;
-  margin-top: 100px; }
-  .novedades h4 {
-    font-weight: 1000;
-    font-size: 1.5rem;
-    text-align: center;
-    color: black; }
-  .novedades p {
-    vertical-align: bottom;
-    font-weight: 300;
-    font-size: 1.5rem;
-    text-align: justify; }
-  .novedades div {
-    text-align: center;
-    background-color: #f0eae2; }
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  max-height: 500px; }
 
-#nota1, #nota2, #nota3 {
-  display: inline-flexbox;
-  border: 1px solid #c7d2d6;
-  width: 300px;
-  height: 400px;
-  margin: 50px;
-  padding: 10px;
-  border-radius: 20px;
-  background: rgba(141, 182, 221, 0.644);
-  /*    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);*/
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0); }
-  #nota1 p, #nota2 p, #nota3 p {
-    padding-top: 10px;
-    font-family: Arial, Helvetica, sans-serif; }
+.mySlides {
+  display: none; }
 
-#nota2, #nota3 {
-  float: inline-start; }
+#img {
+  height: 500px; }
 
-/*BANNER ASOCIADOS*/
-.asociados {
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+/*BANNER ASOCIADOS  hacerlo slide tambien pero controlado por mi*/
+.slide-asociados {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -95,8 +153,10 @@ body {
   background-color: aquamarine;
   width: 100%;
   height: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
   margin-top: 100px; }
+  .slide-asociados .mySlides2 a {
+    color: antiquewhite; }
 
 .bahia img {
   width: 100px;
@@ -109,6 +169,52 @@ body {
   height: 100px;
   margin: 100px;
   border-radius: 100px; }
+
+#news {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  #news #cardNews {
+    display: flex;
+    max-width: 300px;
+    max-height: auto;
+    border-radius: 50px;
+    flex-flow: wrap row;
+    -webkit-box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.55); }
+    #news #cardNews #title-card {
+      display: flex;
+      width: 100%;
+      font-size: 2rem;
+      height: 50px;
+      margin: 0px;
+      justify-content: center;
+      align-items: center; }
+    #news #cardNews p {
+      padding-left: 5px;
+      font-size: 1.5rem;
+      padding-right: 5px; }
+    #news #cardNews img {
+      display: flex;
+      width: 100%;
+      height: 200px;
+      margin: 0px;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px; }
+    #news #cardNews a {
+      display: flex;
+      height: 25px;
+      width: 75px;
+      align-items: center;
+      justify-content: center;
+      margin-left: 5px;
+      background-color: darkslategrey;
+      margin-bottom: 50px;
+      padding-left: 5px;
+      font-size: 1.1rem;
+      color: white;
+      text-decoration: none;
+      margin-top: 25px; }
 
 /*COMUNICACION*/
 .comunicacion {
@@ -136,26 +242,62 @@ body {
     text-align: center;
     color: black; }
 
+/*
 .mapa iframe {
-  width: 200px;
-  height: 200px; }
-
-.form {
-  background-color: beige;
-  padding: 15px;
-  width: 200px;
-  height: 200px;
-  justify-content: center; }
-  .form legend {
-    float: inline-start;
-    font-weight: 75px;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    text-align: center;
-    color: black; }
+    width: 200px;
+    height: 200px;
+}*/
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 200px; }
+  .contact #buttonContact {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+    border: 0px;
+    border-radius: 5px; }
+  .contact #btnEnviar {
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 25px;
+    color: white;
+    background-color: darkslategrey; }
+  .contact #buttonContact:hover {
+    background-color: rgba(47, 79, 79, 0.599); }
+  .contact #vForm {
+    display: none; }
+  .contact #signup-form {
+    display: flex;
+    margin: 0px;
+    border: 0px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    .contact #signup-form input {
+      width: 400px;
+      height: 50px;
+      border-radius: 5px;
+      margin: 25px;
+      color: white;
+      background-color: darkslategrey; }
+    .contact #signup-form legend {
+      display: flex;
+      width: 100%;
+      font-weight: 75px;
+      font-size: 2rem;
+      justify-content: center;
+      text-align: center;
+      color: darkslategrey; }
 
 /*SOBRE NOSOTOROS*/
-.somos {
+#somos {
   display: flex;
   flex-flow: row wrap;
   font-size: 1.80rem;
@@ -169,7 +311,7 @@ body {
   /*    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);*/
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0);
   box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0); }
-  .somos img {
+  #somos img {
     display: flex;
     align-content: center;
     width: 100%;
@@ -177,13 +319,13 @@ body {
     border-radius: 10px;
     margin-bottom: 10px; }
 
-.valores {
+#valores {
   display: flex;
   flex-flow: row wrap;
   margin-top: 50px;
   width: 100%;
   justify-content: space-evenly; }
-  .valores #val1, .valores #val2, .valores #val3 {
+  #valores #val1, #valores #val2, #valores #val3 {
     display: inline-flexbox;
     border: 1px solid #c7d2d6;
     width: 250px;
@@ -194,31 +336,31 @@ body {
     background: rgba(240, 240, 240, 0.493);
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0);
     box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0); }
-    .valores #val1 p, .valores #val2 p, .valores #val3 p {
+    #valores #val1 p, #valores #val2 p, #valores #val3 p {
       padding-top: 10px;
       color: #fa0606;
       text-align: center;
       font-size: 1.75rem;
       font-weight: 1000; }
-  .valores #txt1 p {
+  #valores #txt1 p {
     padding-top: 10px;
     color: black;
     text-align: justify;
     font-size: 1.5rem;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .valores #val2 p {
+  #valores #val2 p {
     color: #37fa06; }
-  .valores #txt2 p {
+  #valores #txt2 p {
     padding-top: 10px;
     color: black;
     text-align: left;
     font-size: 1.5rem;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .valores #val3 p {
+  #valores #val3 p {
     color: #060afa; }
-  .valores #txt3 p {
+  #valores #txt3 p {
     padding-top: 10px;
     color: black;
     text-align: left;
@@ -229,7 +371,6 @@ body {
 .autorCont {
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
   height: 500px;
   border-radius: 25px;
   justify-content: space-around;
@@ -252,6 +393,40 @@ body {
   margin: 20px;
   border-radius: 100px; }
 
+.mapa {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 100px; }
+  .mapa h4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-flow: row wrap; }
+  .mapa #submap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px; }
+  .mapa #txtCard {
+    display: flex;
+    border-radius: 50px;
+    width: 500px;
+    background-color: darkgray;
+    height: 300px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center; }
+    .mapa #txtCard p {
+      display: flex;
+      height: 200px;
+      width: 600px;
+      font-size: 1.85rem;
+      margin: 25px;
+      text-justify: distribute; }
+
 /*REGLAMENTOS*/
 h2 {
   font-weight: 200;
@@ -262,62 +437,50 @@ h2 {
   /* UBICACION DE TXT*/
   color: black; }
 
-.foam {
+#foam {
   display: inline-flex;
   flex-flow: wrap row;
   justify-content: space-around; }
-  .foam article img {
+  #foam article img {
     width: 200px;
     height: 200px;
-    margin: 100px;
     border-radius: 100px; }
-    .foam article img:hover {
-      height: 250px;
-      width: 250px; }
-  .foam article a {
+  #foam article a {
     display: flex;
     margin-left: 50px; }
-  .foam p {
+  #foam p {
     display: flex;
     flex-flow: wrap row;
     justify-content: center;
     background-color: darkgrey;
     border-radius: 50px;
-    width: 300px;
-    height: 125px;
-    margin: 75px;
     padding: 15px;
+    margin: 10px;
     text-align: center;
-    font-size: 1.5rem; }
+    font-size: 1.75rem; }
 
-.cloth {
+#cloth {
   display: inline-flex;
   flex-flow: wrap row;
   justify-content: space-around;
-  /*margin: 75px;*/ }
-  .cloth article img {
+  margin-bottom: 200px; }
+  #cloth article img {
     width: 200px;
     height: 200px;
-    margin: 100px;
     border-radius: 100px; }
-    .cloth article img:hover {
-      height: 250px;
-      width: 250px; }
-  .cloth article a {
+  #cloth article a {
     display: flex;
     margin-left: 50px; }
-  .cloth p {
+  #cloth p {
     display: flex;
     flex-flow: wrap row;
     justify-content: center;
     background-color: darkgrey;
     border-radius: 50px;
-    width: 300px;
-    height: 150px;
-    margin: 75px;
     padding: 15px;
+    margin: 10px;
     text-align: center;
-    font-size: 1.5rem; }
+    font-size: 1.75rem; }
 
 .torneos {
   display: flex;
@@ -498,7 +661,7 @@ h2 {
     margin-top: 50px;
     width: 100%;
     justify-content: space-evenly; }
-    .valores #val1, .valores #val2, .valores #val3 {
+    .valores #val1, .valores #valores #val2, #valores .valores #val2, .valores #valores #val3, #valores .valores #val3 {
       display: inline-flexbox;
       border: 1px solid #c7d2d6;
       width: 250px;
@@ -509,7 +672,7 @@ h2 {
       background: rgba(240, 240, 240, 0.493);
       -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0);
       box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247, 255, 217, 0); }
-      .valores #val1 p, .valores #val2 p, .valores #val3 p {
+      .valores #val1 p, .valores #valores #val2 p, #valores .valores #val2 p, .valores #valores #val3 p, #valores .valores #val3 p {
         padding-top: 10px;
         color: #fa0606;
         text-align: center;
@@ -605,3 +768,88 @@ h2 {
 .torneos p {
   margin-left: 50px;
   margin-bottom: 50px; }
+
+#provs {
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+#bsas {
+  display: flex;
+  width: 90%;
+  height: 300px;
+  background-color: rgba(255, 238, 0, 0.558);
+  border-radius: 50px;
+  -webkit-box-shadow: -1px 3px 28px 4px #000;
+  box-shadow: -1px 3px 28px 4px #000;
+  margin-bottom: 75px; }
+  #bsas img {
+    height: 299px;
+    width: 30%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px; }
+  #bsas p {
+    display: flex;
+    margin: 25px;
+    font-size: 2rem;
+    width: 50%;
+    height: 250px;
+    justify-content: center; }
+
+#laRioja {
+  display: flex;
+  width: 90%;
+  height: 300px;
+  background-color: rgba(129, 31, 31, 0.558);
+  border-radius: 50px;
+  -webkit-box-shadow: -1px 3px 28px 4px #000;
+  box-shadow: -1px 3px 28px 4px #000;
+  margin-bottom: 75px; }
+  #laRioja img {
+    height: 299px;
+    width: 30%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px; }
+  #laRioja p {
+    display: flex;
+    margin: 25px;
+    font-size: 2rem;
+    width: 50%;
+    height: 250px;
+    justify-content: center; }
+
+#cordoba {
+  display: flex;
+  width: 90%;
+  height: 300px;
+  background-color: rgba(250, 4, 4, 0.618);
+  border-radius: 50px;
+  -webkit-box-shadow: -1px 3px 28px 4px #000;
+  box-shadow: -1px 3px 28px 4px #000;
+  margin-bottom: 75px; }
+  #cordoba img {
+    height: 299px;
+    width: 30%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px; }
+  #cordoba p {
+    display: flex;
+    margin: 25px;
+    font-size: 2rem;
+    width: 50%;
+    height: 250px;
+    justify-content: center; }
+
+#noti {
+  display: flex;
+  min-height: 500px;
+  max-height: 1500px;
+  width: 100%; }
+  #noti p {
+    display: block;
+    justify-content: center;
+    height: 200px;
+    width: 100%; }

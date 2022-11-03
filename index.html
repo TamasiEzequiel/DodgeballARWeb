@@ -17,10 +17,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200;1,400&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
-
-    <!--BOOSTRAP (por ahora no lo aplico hasta encontrar el diseño correcto)-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Bebas+Neue&family=Lobster&display=swap"
+        rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -30,151 +31,123 @@
 
     <header>
 
-        <nav class="navbar navbar-dark" style="background-color: #1a1d1d7a;">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./IMGS/IMG LOGO.png" width="75" height="75" class="d-inline-block align-center" alt="">
-                Dodgeball Argentina
-            </a>
-    
-            <ul class="nav nav-pills nav-fill">
-               
-                <div class="mx-auto" style="width: 100px; margin: 15px;">
-                
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./sobre-nosotros.html">Sobre Nosotros</a>
+        <div class="navBar">
+            <a class="logo" href="./index.html"> <img src="./IMGS/IMG LOGOV2.png" alt="logo"></a>
+
+            <nav>
+                <ul>
+                    <li class="li-desp"> <a href="./sobre-nosotros.html">Sobre Nosotros</a>
+                        <ul class="nav-desp">
+                            <li><a href="./provincias.html">Provincias Asociadas</a></li>
+                            <li><a href="./equipos.html">Equipos</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="./reglamentos.html">Reglamentos</a></li>
+
+                    <li class="li-desp"> <a href="./torneos.html">Torneos</a>
+                        <ul class="nav-desp">
+                            <li><a href="./estadisticas.html">Estadisticas</a></li>
+                        </ul>
                     </li>
                     
-                </div>
-                
-                <div class="mx-auto" style="width: 100px; margin: 15px;">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./reglamentos.html">Reglamentos</a>
-                </li>
-                </div>
-                
-                <div class="mx-auto" style="width: 100px; margin: 15px;">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./torneos.html">Torneos</a>
-                </li>
-                </div>
-    
-                <div class="mx-auto" style="width: 100px; margin: 15px;">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./internacional.html">Internacional</a>
-                </li>
-                </div>
-    
-            </ul>
-    
-        </nav>
+                    <li> <a href="./internacional.html">Internacional</a> </li>
+                </ul>
+
+            </nav>
+        </div>
 
     </header>
 
-    <h3>Novedades</h3>
+    <!--SLIDE NOTAS-->
+    <!--ESTABLECER UN TAMAÑO DE IMAGENES IGUALES-->
+    <div class="slideshow-container">
 
-    <div class="novedades">
-
-        <div id="nota1">
-            <h4>Nuevo Sponsor</h4>
-            <img src="./IMGS/publi didi.jpg" alt="Didi">
-            <p>
-                Durante la realizacion de la Copa America de Futbol 2021, la reconocida marca "Didi" nos brindo su apoyo
-                publicitario, siendo este el primer sponsor de caracter internacional que contiene la Asociacion
-                Argentina de Dodgeball
-            </p>
+        <div class="mySlides fade">
+            <img id="img" src="./IMGS/didi.jpg" style="width: 100%">
         </div>
 
-        <div id="nota2">
-            <h4>El Dodgeball en La Rioja crece cada vez mas</h4>
-            <img src="./IMGS/deportes la rioja.jpg" alt="Deporte Larioja">
-            <p>
-                En la visita a los directivos de Dodgeball La Rioja, se entablo una reunion en la Secretaria de Deportes
-                de la Provincia quien brinda su apoyo y acompaña a la realizacion de la actividad en todos los centros
-                deportivos
-            </p>
+        <div class="mySlides fade">
+
+            <img id="img" src="./IMGS/didi.jpg" style="width: 100%">
         </div>
 
-        <div id="nota3">
-            <h4>Se viene el 1° torneo de Cloth</h4>
-            <img src="./IMGS/pelotaCloth.jpg" alt="pelotaCloth">
-            <p>
-                El dia 28 de Noviembre del 2021 se disputara el primer torneo oficial de la categoria Cloth( tela) que
-                en el cual participaran 6 equipos de la provincia de Buenos Aires.
-                <br> ¿Quien sera el campeón?
-            </p>
+        <div class="mySlides fade">
+            <img id="img" src="./IMGS/fondo-menu.jpg" style="width: 100%">
+        </div>
+    </div>
+
+    <h3>Noticias</h3>
+
+    <div id="news"> </div>
+
+    <h3>Asociados</h3> <!-- armar un SLIDE-->
+
+    <div class="slide-asociados">
+
+        <div class="mySlides2 bahia">
+            <a href="https://www.facebook.com/Dodgeballbbca/">
+                <img src="./IMGS/logoBahia.jpg" alt="bahia">
+            </a>
+            <a href="https://www.instagram.com/dodgeballlr/">
+                <img src="./IMGS/larioja.png" alt="Larioja">
+            </a>
+            <a href="https://www.instagram.com/dodgeballlr/">
+                <img src="./IMGS/larioja.png" alt="Larioja">
+            </a>
+        </div>
+
+        <div class="mySlides2 larioja">
+            <a href="https://www.instagram.com/dodgeballlr/">
+                <img src="./IMGS/larioja.png" alt="Larioja">
+            </a>
+            <a href="https://www.facebook.com/Dodgeballbbca/">
+                <img src="./IMGS/logoBahia.jpg" alt="bahia">
+            </a>
+            <a href="https://www.facebook.com/Dodgeballbbca/">
+                <img src="./IMGS/logoBahia.jpg" alt="bahia">
+            </a>
         </div>
 
     </div>
 
-    <h3>Asociados</h3>
+    <h3>Se parte de Dodgeball Argentina</h3>
 
-    <section class="asociados">
-
-        <article class="bahia">
-            <a href="https://www.facebook.com/Dodgeballbbca/">
-                <img src="./IMGS/logoBahia.jpg" alt="bahia">
-            </a>
-        </article>
-
-        <article class="larioja">
-            <a href="https://www.instagram.com/dodgeballlr/">
-                <img src="./IMGS/larioja.png" alt="Larioja">
-            </a>
-        </article>
-
-    </section>
-
-    <h3>Canales de comunicacion</h3>
-
-    <section class="comunicacion">
+    <div class="contact">
 
 
-        <article class="mapa">
-            <h4>Sede</h4>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.655453747078!2d-58.47615508505288!3d-34.58758366415102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb60d8e9cc409%3A0xe98ce2d22261cea!2s%C3%81valos%201036%2C%20C1427AXN%20CABA!5e0!3m2!1ses-419!2sar!4v1636144015642!5m2!1ses-419!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div id="vForm">
 
-        </article>
-        <fieldset class="form">
-            <form action="/" method="post"></form>
-            <legend>¿Buscas mas info? !Escribinos¡</legend>
-            <input id="Nombre" type="text" placeholder="Nombre" required>
-            <input id="Telefono" type="tel" placeholder="Tel">
-            <input id="Email" type="email" placeholder="Email" required>
-            <input type="text" placeholder="Dejanos tus dudas y comentarios!">
-            <input type="submit" value="Enviar">
-        </fieldset>
+            <form action="/" method="post" id="signup-form">
+                <legend>Completa los campos y un representante se contactara a la breveedad</legend>
+                <input type="text" placeholder="Nombre" required>
+                <input type="tel" placeholder="Tel">
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Dejanos tus dudas y comentarios!">
+                <button id="btnEnviar" type="submit" value="Enviar">Enviar</button>
+            </form>
+        </div>
 
-        <p>
-            <br>
-            Presidente
-            <br>
-            Diego Bertola
-            <br>
-            <br>
-            Tel: 11-5030-3456
-        </p>
+        <button id="buttonContact"> Deseo contactarme con un representante </button>
 
-    </section>
-
+    </div>
 
     <footer>
         <div class="redes">
             <p><a id="yt" href="https://www.youtube.com/results?search_query=dodgeball+argentina">
-                    <img src="./IMGS/vYt.gif" alt="">
+                    <img src="IMGS/YTB.svg" alt="">
                 </a>
 
                 <a id="fb" href="https://web.facebook.com/dodgeball.ar/?_rdc=1&_rdr">
-                    <img src="./IMGS/vFb.gif" alt="facebook">
+                    <img src="./IMGS/FB.svg" alt="facebook">
                 </a>
 
                 <a id="ig" href="https://www.instagram.com/dodgeball.ar/">
-                    <img src="./IMGS/vIg.gif" alt="">
+                    <img src="./IMGS/IG.svg" alt="">
                 </a>
 
                 <a id="tw" href="https://twitter.com/dodgeballar">
-                    <img src="./IMGS/vTw.gif" alt=""> </a>
+                    <img src="./IMGS/TW.svg" alt=""> </a>
 
             </p>
         </div>
@@ -184,14 +157,15 @@
                 <br>
                 Miembro Oficial de la W.D.B.F
                 <br>
-                2021
+                2022
             </p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+
+    <script src="./js/slide.js"></script>
+    <script src="./components/news.js"></script>
+    <script src="./components/contact.js"></script>
 
 </body>
 

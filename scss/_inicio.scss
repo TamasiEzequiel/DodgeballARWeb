@@ -1,69 +1,49 @@
-
-
-
-.novedades{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    margin-top: 100px;
-
-    h4 {
-        font-weight: 1000;
-        font-size: 1.5rem;
-        text-align: center; 
-        color: black;
-    }
-
-    p{
-        vertical-align: bottom;
-        font-weight: 300;
-        font-size: 1.5rem; 
-        text-align: justify; 
-    }
-
-    div{
-        text-align: center; 
-        background-color: rgb(240, 234, 226);
-    }
-
+//slide inicio
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    max-height: 500px;
 }
 
+.mySlides {
+    display: none;
+}
 
-#nota1{
-    display: inline-flexbox;
-    border: 1px solid rgb(199, 210, 214);  
-    width: 300px;
-    height: 400px;
-    margin: 50px;
-    padding: 10px;
-    border-radius: 20px;    
-    background: rgba(141, 182, 221, 0.644);
-/*    background: linear-gradient(90deg, rgba(246,221,232,1) 97%, rgba(224,190,190,1) 100%);*/
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247,255,217,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 23px 35px 41px 26px rgba(247,255,217,0);
+#img {
+    height: 500px;
+}
 
-    p{
-        padding-top: 10px;
-        font-family: Arial, Helvetica, sans-serif;
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
-#nota2{
-    @extend #nota1;
-    float: inline-start;
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-#nota3{
-    @extend #nota2;
-}
+/*BANNER ASOCIADOS  hacerlo slide tambien pero controlado por mi*/
 
-
-/*BANNER ASOCIADOS*/
-
-
-.asociados{
+.slide-asociados {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -71,85 +51,202 @@
     background-color: aquamarine;
     width: 100%;
     height: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 300px;
     margin-top: 100px;
+
+    .mySlides2 {
+
+        a {
+            color: antiquewhite;
+        }
+    }
 }
 
 //APLICO MIXIN PARA PARAMETRIZAR LOS ESCUDOS DE ASOCIADOS, EN CASO DE AGREGAR MAS YA ESTA PREDETERMINADO
 
-@mixin imgLog  ($ancho, $alto, $margen, $radio){
+@mixin imgLog ($ancho, $alto, $margen, $radio) {
     width: $ancho;
     height: $alto;
-    margin: $margen; 
+    margin: $margen;
     border-radius: $radio;
 }
 
 .bahia img {
-    @include imgLog(100px,100px,100px,100px)
+    @include imgLog(100px, 100px, 100px, 100px)
 }
 
 .larioja img {
-    @include imgLog(100px,100px,100px,100px)
+    @include imgLog(100px, 100px, 100px, 100px)
 }
+
+#news {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    #cardNews {
+        display: flex;
+        max-width: 300px;
+        max-height: auto;
+        border-radius: 50px;
+        flex-flow: wrap row;
+        -webkit-box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.55);
+        box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.55);
+
+        #title-card {
+            display: flex;
+            width: 100%;
+            font-size: 2rem;
+            height: 50px;
+            margin: 0px;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        p {
+            padding-left: 5px;
+            font-size: 1.5rem;
+            padding-right: 5px;
+        }
+
+        img {
+            display: flex;
+            width: 100%;
+            height: 200px;
+            margin: 0px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+
+        a {
+            display: flex;
+            height: 25px;
+            width: 75px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
+            background-color: darkslategrey;
+            margin-bottom: 50px;
+            padding-left: 5px;
+            font-size: 1.1rem;
+            color: white;
+            text-decoration: none;
+            margin-top: 25px;
+
+        }
+    }
+}
+
+
+
 
 
 
 /*COMUNICACION*/
 .comunicacion {
-    
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     width: 100%;
     margin-bottom: 100px;
     margin-top: 100px;
 
-    h3{
+    h3 {
         font-weight: 1000;
-        font-size: 2rem; 
-        text-align: center; 
-        color: black;
-    }
-
-    h4{
-        font-weight: 200;
-        font-size: 1.5rem; 
+        font-size: 2rem;
         text-align: center;
         color: black;
     }
 
-    p{
+    h4 {
+        font-weight: 200;
+        font-size: 1.5rem;
+        text-align: center;
+        color: black;
+    }
+
+    p {
         display: flex;
         font-weight: 75px;
-        font-size: 2rem; 
-        text-align: center; 
+        font-size: 2rem;
+        text-align: center;
         color: black;
-    
+
     }
 
 }
 
-.mapa iframe{
+/*
+.mapa iframe {
     width: 200px;
     height: 200px;
-}
+}*/
 
-.form{
-    background-color: beige;
-    padding: 15px;
-    width: 200px;
-    height: 200px;
-    justify-content: center;
+.contact {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 200px;
 
-    
-
-    legend{
-        float: inline-start;
-        font-weight: 75px;
-        margin-bottom: 10px;
-        font-size: 1.5rem; 
-        text-align: center; 
+    #buttonContact {
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
         color: black;
+        border: 0px;
+        border-radius: 5px;       
+    }
+
+    #btnEnviar{
+        width: 400px;
+        height: 50px;
+        border-radius: 5px;
+        margin: 25px;
+        color: white;
+        background-color: darkslategrey;        
+    }
+
+    #buttonContact:hover{
+        background-color: rgba(47, 79, 79, 0.599) ;
+    }
+
+    #vForm{
+        display: none;
+    }
+
+    #signup-form {
+        display: flex;
+        margin: 0px;
+        border: 0px;
+        flex-flow: row wrap;
+        justify-content:space-evenly;
+        align-items: center;
+
+       input {
+            width: 400px;
+            height: 50px;
+            border-radius: 5px;
+            margin: 25px;
+            color: white;
+            background-color: darkslategrey;
+        }
+
+
+        legend {
+            display: flex;
+            width: 100%;
+            font-weight: 75px;
+            font-size: 2rem;
+            justify-content: center;
+            text-align: center;
+            color: darkslategrey;
+        }
     }
 }

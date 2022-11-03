@@ -1,0 +1,95 @@
+#provs {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+
+#bsas {
+
+    display: flex;
+    width: 90%;
+    height: 300px;
+    background-color: rgba(255, 238, 0, 0.558);
+    border-radius: 50px;
+    -webkit-box-shadow: -1px 3px 28px 4px #000;
+    box-shadow: -1px 3px 28px 4px #000;
+    margin-bottom: 75px;
+
+
+    img {
+        height: 299px;
+        width: 30%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    p {
+        display: flex;
+        margin: 25px;
+        font-size: 2rem;
+        width: 50%;
+        height: 250px;
+        justify-content: center;
+    }
+}
+
+#laRioja {
+
+    display: flex;
+    width: 90%;
+    height: 300px;
+    background-color: rgba(129, 31, 31, 0.558);
+    border-radius: 50px;
+    -webkit-box-shadow: -1px 3px 28px 4px #000;
+    box-shadow: -1px 3px 28px 4px #000;
+    margin-bottom: 75px;
+
+    img {
+        height: 299px;
+        width: 30%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    p {
+        display: flex;
+        margin: 25px;
+        font-size: 2rem;
+        width: 50%;
+        height: 250px;
+        justify-content: center;
+    }
+}
+
+#cordoba {
+
+    display: flex;
+    width: 90%;
+    height: 300px;
+    background-color: rgba(250, 4, 4, 0.618);
+    border-radius: 50px;
+    -webkit-box-shadow: -1px 3px 28px 4px #000;
+    box-shadow: -1px 3px 28px 4px #000;
+    margin-bottom: 75px;
+
+    img {
+        height: 299px;
+        width: 30%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    p {
+        display: flex;
+        margin: 25px;
+        font-size: 2rem;
+        width: 50%;
+        height: 250px;
+        justify-content: center;
+    }
+}
