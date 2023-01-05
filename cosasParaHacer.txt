@@ -1,0 +1,13 @@
+**FRONTEND**
+Mejorar la parte de torneos, hacer seccion de torneos nacionales y seccion de internacionales. Fijarse como integrar twitch ademas que con el qr
+
+
+poner boton back to top
+crear boton finalizar compra
+
+***BACKEND***
+Fijarse en back como hacer que se envie el formulario una vez completado en el index
+Indexar al shop boton de compra que redirija a mercadopago
+Ver que se genere una boleta de pago y envio con direccion y demas cosas del comprar para posterior realizarlo y archivar
+
+

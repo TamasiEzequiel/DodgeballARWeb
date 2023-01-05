@@ -1,5 +1,5 @@
 //slide inicio
-.slideshow-container {
+#slideshow-container {
     width: 100%;
     position: relative;
     margin: auto;
@@ -43,7 +43,7 @@
 
 /*BANNER ASOCIADOS  hacerlo slide tambien pero controlado por mi*/
 
-.slide-asociados {
+#slide-asociados {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -180,11 +180,10 @@
 
 }
 
-/*
-.mapa iframe {
-    width: 200px;
-    height: 200px;
-}*/
+
+
+
+
 
 .contact {
     display: flex;
@@ -192,7 +191,7 @@
     align-items: center;
     width: 100%;
     margin-bottom: 200px;
-
+    
     #buttonContact {
         display: flex;
         height: 50px;

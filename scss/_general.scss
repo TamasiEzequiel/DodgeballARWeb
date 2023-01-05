@@ -12,6 +12,8 @@ body {
     background-position: top;
     background-size: 100% 225px;
 
+
+
     h3 {
         display: flex;
         justify-content: center;
@@ -24,14 +26,19 @@ body {
     }
 }
 
-
+#bannerImg{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+}
 
 .navBar {
 
     display: flex;
+    position: relative;
     width: 100%;
     height: 200px;
-    background-color: rgb(112, 112, 121);
     justify-content: space-evenly;
     -webkit-box-shadow: 0px 2px 5px 0px #000000;
     box-shadow: 0px 2px 5px 0px #000000;
@@ -116,26 +123,59 @@ body {
 }
 
 
+//whatsappp
+.btn-whatsapp {
+    display: block !important;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius:100px !important;
+    }
+    .btn-whatsapp:hover{
+    border-radius:100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    transition-duration: 1s;
+} 
+
+
+
+
+
 
 
 
 /*FOOTER*/
+#bannerFooter{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    border-start-end-radius: 200px;
+
+}
+
 
 .footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    
 
 }
 
 
 .redes p {
     display: flex;
+    position: relative;
     height: 100px;
     margin-bottom: 0px;
     padding: 0px;
-    background-color: rgb(112, 112, 121);
     flex-flow: row wrap;
     justify-content: space-evenly;
     border-start-end-radius: 200px;
@@ -165,6 +205,7 @@ body {
 
 .copy {
     display: flex;
+    position: relative;
     margin: 0px;
     padding: 0px;
     flex-flow: wrap row;
@@ -173,5 +214,7 @@ body {
     font-weight: 100;
     text-align: center;
     color: rgb(250, 252, 252);
-    background-color: rgb(112, 112, 121);
 }
+
+
+

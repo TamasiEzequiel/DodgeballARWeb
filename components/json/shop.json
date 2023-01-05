@@ -1,0 +1,13 @@
+[
+    { "id": 1, "product": "remeraSeleccion19", "precio": 3500,"stock": 5, "nombre": "Remera Seleccion 2019", "img": "./IMGS/IMG LOGO.png" },
+    { "id": 2, "product": "botella", "precio": 2000,"stock": 5, "nombre": "Botella asociacion", "img": "./IMGS/botella.png" },
+    { "id": 3, "product": "bolso", "precio": 6000,"stock": 5, "nombre": "Bolso Asociacion Argentina de Dodgeball", "img": "./IMGS/IMG LOGO.png" },
+    { "id": 4, "product": "taza", "precio": 1250,"stock": 5, "nombre": "Taza Asociacion Argentina de Dodgeball", "img": "./IMGS/taza.png" },
+    { "id": 5, "product": "shaker", "precio": 1500,"stock": 5, "nombre": "Shaker vivi dodgeball", "img": "./IMGS/Shaker.png" },
+    { "id": 6, "product": "gorroLana", "precio": 3000,"stock": 5, "nombre": "Gorra Asociacion Argentina de Dodgeball", "img": "./IMGS/Gorro.png" },
+    { "id": 7, "product": "buzo", "precio": 4000,"stock": 5, "nombre": "Buzo edicion limitada 22", "img": "./IMGS/buzo.png" },
+    { "id": 8, "product": "cantimplora", "precio": 2000,"stock": 5, "nombre": "Cantimplora", "img": "./IMGS/Cantimplora.png" },
+    { "id": 9, "product": "foam", "precio": 4000, "stock": 5, "nombre": "Pelota oficial", "img": "./IMGS/pelotaFoam.jpg" }
+
+
+]

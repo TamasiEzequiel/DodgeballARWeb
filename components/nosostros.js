@@ -32,6 +32,7 @@ valores.innerHTML = `
     
     
 <div id="val1">
+<img src="./IMGS/honestidad.png" alt="">
 <p>
     HONESTIDAD
     <br>
@@ -44,7 +45,7 @@ valores.innerHTML = `
 </div>
 
 <div id="val2">
-
+<img src="./IMGS/inclusion.png" alt="">
 <p>
     INCLUSION
 </p>
@@ -57,7 +58,7 @@ valores.innerHTML = `
 </div>
 
 <div id="val3">
-
+<img src="./IMGS/compromiso.png" alt="">
 <p>
     COMPROMISO
 </p>
